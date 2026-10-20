@@ -1,0 +1,361 @@
+/* ==========================================================================
+   Work index
+   ========================================================================== */
+
+.work-intro {
+    padding-top: clamp(2.5rem, 5vw, 4.5rem);
+    padding-bottom: clamp(3rem, 5vw, 5rem);
+}
+
+.work-intro__meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--line);
+}
+
+.work-intro__count {
+    color: var(--ink-faint);
+    font-family: var(--font-mono);
+    font-size: 0.58rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+
+.work-intro__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.55fr);
+    gap: clamp(2.5rem, 7vw, 9rem);
+    align-items: end;
+    padding-top: clamp(2.5rem, 5vw, 5rem);
+}
+
+.work-intro__title {
+    font-family: var(--font-display);
+    font-size: clamp(4rem, 10.4vw, 11rem);
+    line-height: 0.82;
+    letter-spacing: -0.055em;
+}
+
+.work-intro__title span {
+    display: inline-block;
+    color: var(--accent);
+    font-family: var(--font-sans);
+    font-size: 0.86em;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: -0.06em;
+    padding-right: 0.08em;
+}
+
+.work-intro__aside {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 29rem;
+    justify-self: end;
+    padding-bottom: 0.4rem;
+}
+
+.work-intro__aside > p:first-child {
+    font-size: clamp(0.96rem, 1.08vw, 1.05rem);
+    line-height: 1.65;
+    color: var(--ink-soft);
+}
+
+.work-intro__hint {
+    padding-top: 0.9rem;
+    border-top: 1px solid var(--line);
+    color: var(--ink-faint);
+    font-family: var(--font-mono);
+    font-size: 0.55rem;
+    line-height: 1.6;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+}
+
+/* --------------------------------------------------------------------------
+   Work rows
+   -------------------------------------------------------------------------- */
+
+.work-list-shell {
+    position: relative;
+    padding-bottom: clamp(4rem, 7vw, 7rem);
+}
+
+.work-list__head {
+    display: grid;
+    grid-template-columns: 3.8rem minmax(0, 1.6fr) minmax(0, 1.05fr) minmax(0, 0.72fr) 3.5rem 2.5rem;
+    gap: 1.4rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid var(--line-strong);
+    color: var(--ink-faint);
+    font-family: var(--font-mono);
+    font-size: 0.53rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+
+.work-row {
+    border-bottom: 1px solid var(--line);
+}
+
+.work-row__link {
+    display: grid;
+    grid-template-columns: 3.8rem minmax(0, 1.6fr) minmax(0, 1.05fr) minmax(0, 0.72fr) 3.5rem 2.5rem;
+    gap: 1.4rem;
+    align-items: center;
+    padding-block: clamp(1.55rem, 2.6vw, 2.5rem);
+    color: var(--ink);
+    transition: opacity 0.3s var(--ease);
+}
+
+.work-row__number {
+    align-self: flex-start;
+    padding-top: 0.35rem;
+    color: var(--ink-faint);
+    font-family: var(--font-mono);
+    font-size: 0.58rem;
+    letter-spacing: 0.05em;
+    transition: color 0.25s;
+}
+
+.work-row__main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    min-width: 0;
+}
+
+.work-row__title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 3.4vw, 3.5rem);
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+    transition:
+        color 0.3s var(--ease),
+        transform 0.45s var(--ease);
+}
+
+.work-row__line {
+    max-width: 38ch;
+    color: var(--ink-soft);
+    font-size: 0.78rem;
+    line-height: 1.45;
+    transition: color 0.3s;
+}
+
+.work-row__kind,
+.work-row__stack,
+.work-row__year {
+    color: var(--ink-soft);
+    font-family: var(--font-mono);
+    font-size: 0.56rem;
+    line-height: 1.5;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+}
+
+.work-row__stack {
+    color: var(--ink-faint);
+}
+
+.work-row__year {
+    justify-self: start;
+}
+
+.work-row__arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.45rem;
+    height: 2.45rem;
+    border: 1px solid var(--line-strong);
+    border-radius: 50%;
+    color: var(--ink-soft);
+    justify-self: end;
+    transition:
+        color 0.3s,
+        background-color 0.3s,
+        border-color 0.3s,
+        transform 0.4s var(--ease);
+}
+
+.work-row__thumb {
+    display: none;
+}
+
+.work-preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 40;
+    width: 350px;
+    pointer-events: none;
+    opacity: 0;
+    transform-origin: center;
+    will-change: transform;
+}
+
+.work-preview__cover {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border: 1px solid rgba(25, 24, 21, 0.08);
+    box-shadow: 0 32px 55px rgba(25, 24, 21, 0.16);
+}
+
+.work-preview__cover .cover {
+    height: 100%;
+    aspect-ratio: auto;
+}
+
+.work-preview__caption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.65rem 0.75rem;
+    background: var(--paper-bright);
+    border: 1px solid var(--line);
+    border-top: 0;
+    color: var(--ink-soft);
+    font-family: var(--font-mono);
+    font-size: 0.55rem;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+}
+
+.work-list__note {
+    max-width: 36rem;
+    margin-top: 2rem;
+    margin-left: 5.2rem;
+    padding-left: 1rem;
+    border-left: 1px solid var(--accent);
+    color: var(--ink-faint);
+    font-size: 0.77rem;
+    line-height: 1.6;
+}
+
+/* Archive ----------------------------------------------------------------- */
+
+.work-archive {
+    margin-top: clamp(4rem, 7vw, 7rem);
+    border-top: 1px solid var(--line-strong);
+}
+
+.work-archive__head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-block: 1rem;
+}
+
+.work-archive__note {
+    color: var(--ink-faint);
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+
+.work-archive__list {
+    border-top: 1px solid var(--line);
+}
+
+.archive-row {
+    display: grid;
+    grid-template-columns: 3.2rem minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.2fr);
+    gap: 1.4rem;
+    align-items: baseline;
+    padding-block: 1.15rem;
+    border-bottom: 1px solid var(--line);
+}
+
+.archive-row__number {
+    color: var(--ink-faint);
+    font-family: var(--font-mono);
+    font-size: 0.55rem;
+    letter-spacing: 0.04em;
+}
+
+.archive-row__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.2rem, 1.65vw, 1.6rem);
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+}
+
+.archive-row__kind,
+.archive-row__note {
+    color: var(--ink-soft);
+    font-family: var(--font-mono);
+    font-size: 0.54rem;
+    line-height: 1.5;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+}
+
+.archive-row__note {
+    color: var(--ink-faint);
+    text-transform: none;
+    letter-spacing: 0.01em;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .work-list:hover .work-row__link {
+        opacity: 0.48;
+    }
+
+    .work-list:hover .work-row:hover .work-row__link,
+    .work-list:focus-within .work-row__link {
+        opacity: 1;
+    }
+
+    .work-row__link:hover .work-row__number {
+        color: var(--accent);
+    }
+
+    .work-row__link:hover .work-row__title {
+        color: var(--accent);
+        transform: translateX(6px);
+    }
+
+    .work-row__link:hover .work-row__line {
+        color: var(--ink);
+    }
+
+    .work-row__link:hover .work-row__arrow {
+        color: var(--paper);
+        background: var(--accent);
+        border-color: var(--accent);
+        transform: translate(2px, -2px);
+    }
+}
+
+@media (max-width: 1180px) {
+    .work-list__head,
+    .work-row__link {
+        grid-template-columns: 3rem minmax(0, 1.55fr) minmax(0, 1fr) 3.2rem 2.2rem;
+        gap: 1rem;
+    }
+
+    .work-list__head span:nth-child(4) {
+        display: none;
+    }
+
+    .work-row__stack {
+        display: none;
+    }
+
+    .work-row__arrow {
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+}
+
+@media (max-width: 1023px) {
+    .work-preview {
+        display: none;
+    }
+}

@@ -1,0 +1,425 @@
+/* ==========================================================================
+   Dark three-colour theme
+   Black is the room. Off-white is the voice. Red and blue do the pointing.
+   ========================================================================== */
+
+/* Shared controls --------------------------------------------------------- */
+
+.button--ink {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+}
+
+.button--ink:hover {
+    background: var(--accent);
+    color: var(--paper);
+    border-color: var(--accent);
+}
+
+.button--paper {
+    background: var(--paper-bright);
+    color: var(--ink);
+    border-color: var(--ink);
+}
+
+.button--paper:hover {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+}
+
+.status__dot {
+    background: var(--available);
+}
+
+.status__dot::after {
+    border-color: var(--available);
+}
+
+::selection {
+    background: var(--accent);
+    color: var(--paper);
+}
+
+/* Header ------------------------------------------------------------------ */
+
+.site-header,
+.site-header.is-scrolled {
+    background: var(--paper);
+}
+
+.site-header::after {
+    background: var(--line);
+}
+
+.brand {
+    color: var(--ink);
+}
+
+.brand--inverted {
+    color: var(--ink);
+}
+
+.menu-trigger {
+    color: var(--ink);
+}
+
+.menu-trigger:hover {
+    background: var(--ink);
+    color: var(--paper);
+}
+
+/* Menu -------------------------------------------------------------------- */
+
+.site-menu {
+    background: #050608;
+    color: var(--ink);
+}
+
+.site-menu__close {
+    color: var(--ink);
+}
+
+.site-menu__close:hover {
+    background: var(--ink);
+    color: var(--paper);
+}
+
+.site-menu__index {
+    color: rgba(var(--paper-rgb), 0.6);
+}
+
+.site-menu__place {
+    color: rgba(var(--paper-rgb), 0.65);
+}
+
+.site-menu__foot {
+    color: rgba(var(--paper-rgb), 0.6);
+}
+
+.site-menu__status .status__dot {
+    background: var(--blue-bright);
+}
+
+.site-menu__status .status__dot::after {
+    border-color: var(--blue-bright);
+}
+
+/* Statement --------------------------------------------------------------- */
+
+.statement {
+    background: var(--blue);
+    color: var(--ink);
+}
+
+.statement .eyebrow--light {
+    color: rgba(var(--paper-rgb), 0.86);
+}
+
+.statement__title {
+    color: var(--ink);
+}
+
+.statement__star {
+    color: var(--ink);
+}
+
+.statement__aside {
+    border-color: rgba(var(--paper-rgb), 0.3);
+}
+
+.statement__aside p {
+    color: rgba(var(--paper-rgb), 0.86);
+}
+
+.statement__aside-mark {
+    color: rgba(var(--paper-rgb), 0.68);
+}
+
+/* Principles -------------------------------------------------------------- */
+
+.principles {
+    background: var(--paper-bright);
+    color: var(--ink);
+}
+
+.principles__title {
+    color: var(--ink);
+}
+
+.principles__head,
+.principle,
+.principle:nth-child(2n) {
+    border-color: rgba(var(--paper-rgb), 0.16);
+}
+
+.principles__star {
+    color: var(--accent);
+}
+
+.principle__copy {
+    color: rgba(var(--paper-rgb), 0.72);
+}
+
+/* Footer ------------------------------------------------------------------ */
+
+.site-footer {
+    background: #050608;
+    color: var(--ink);
+}
+
+.site-footer__link:hover,
+.site-footer__email:hover {
+    color: var(--ink);
+}
+
+.site-footer__email {
+    border-color: rgba(var(--paper-rgb), 0.36);
+}
+
+.site-footer__link .icon {
+    color: rgba(var(--paper-rgb), 0.5);
+}
+
+.site-footer__label {
+    color: rgba(var(--paper-rgb), 0.58);
+}
+
+.site-footer__note {
+    color: rgba(var(--paper-rgb), 0.7);
+}
+
+.site-footer__copyright,
+.site-footer__colophon {
+    color: rgba(var(--paper-rgb), 0.6);
+}
+
+.site-footer__top {
+    color: rgba(var(--paper-rgb), 0.72);
+}
+
+.site-footer__top:hover {
+    color: var(--ink);
+}
+
+.site-footer__status .status__dot {
+    background: var(--blue-bright);
+}
+
+.site-footer__status .status__dot::after {
+    border-color: var(--blue-bright);
+}
+
+/* Contact call to action -------------------------------------------------- */
+
+.contact-cta {
+    background: var(--red-surface);
+    color: var(--ink);
+}
+
+.contact-cta .eyebrow {
+    color: var(--ink);
+}
+
+.contact-cta__star {
+    color: var(--ink);
+}
+
+.contact-cta__title {
+    color: var(--ink);
+}
+
+.contact-cta__aside > p {
+    color: var(--ink);
+}
+
+.contact-cta__email {
+    color: var(--ink);
+    border-color: rgba(var(--paper-rgb), 0.5);
+}
+
+.contact-cta__email:hover {
+    color: var(--ink);
+    border-color: var(--ink);
+}
+
+.contact-cta .button--paper {
+    background: var(--paper);
+    color: var(--ink);
+    border-color: var(--ink);
+}
+
+.contact-cta .button--paper:hover {
+    background: var(--ink);
+    color: var(--paper);
+}
+
+/* Coloured cards ---------------------------------------------------------- */
+
+.home-about__card,
+.identity-card {
+    color: var(--ink);
+}
+
+.home-about__card {
+    background: var(--blue);
+}
+
+.home-about__monogram {
+    color: var(--ink);
+}
+
+.home-about__card > .icon {
+    color: var(--ink);
+}
+
+.home-about__card-foot {
+    color: rgba(var(--paper-rgb), 0.78);
+}
+
+.home-about__card-index {
+    color: rgba(var(--paper-rgb), 0.68);
+}
+
+.identity-card__monogram {
+    color: var(--ink);
+}
+
+.identity-card__monogram span:last-child {
+    color: var(--accent-soft);
+}
+
+.identity-card__star {
+    color: var(--ink);
+}
+
+.identity-card__bottom,
+.identity-card__code {
+    color: rgba(var(--paper-rgb), 0.75);
+}
+
+.identity-card__coordinates {
+    color: rgba(var(--paper-rgb), 0.6);
+}
+
+/* Micro components -------------------------------------------------------- */
+
+.work-preview__cover {
+    border-color: var(--line);
+    box-shadow: 0 32px 65px rgba(0, 0, 0, 0.65);
+}
+
+.project-card__open {
+    background: var(--ink);
+    color: var(--paper);
+}
+
+.work-row__arrow {
+    color: var(--ink-soft);
+}
+
+.work-row__link:hover .work-row__arrow {
+    color: var(--paper);
+}
+
+.work-list__note {
+    color: var(--ink-soft);
+}
+
+/* Forms ------------------------------------------------------------------- */
+
+.contact-form,
+.form-success {
+    background: var(--paper-bright);
+    border-color: var(--line);
+}
+
+.field label {
+    color: var(--ink-soft);
+}
+
+.field input,
+.field textarea,
+.field select {
+    color: var(--ink);
+    border-color: var(--line-strong);
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+    color: rgba(var(--paper-rgb), 0.36);
+}
+
+.field select:invalid {
+    color: rgba(var(--paper-rgb), 0.68);
+}
+
+.field select option {
+    background: var(--paper-bright);
+    color: var(--ink);
+}
+
+.field__hint,
+.field__count,
+.contact-form__required {
+    color: var(--ink-faint);
+}
+
+.form-alert {
+    border-color: var(--accent);
+    background: rgba(255, 75, 62, 0.09);
+    color: var(--accent-soft);
+}
+
+.field__error {
+    color: var(--accent-soft);
+}
+
+.form-success__note,
+.form-success > p {
+    color: var(--ink-soft);
+}
+
+/* Case study accents ------------------------------------------------------ */
+
+.case-outcome .eyebrow {
+    color: color-mix(in srgb, var(--outcome-fg) 86%, transparent);
+}
+
+.case-outcome__body p {
+    color: color-mix(in srgb, var(--outcome-fg) 86%, transparent);
+}
+
+.metric__note {
+    color: color-mix(in srgb, var(--outcome-fg) 76%, transparent);
+}
+
+.metric__label {
+    color: var(--outcome-fg);
+}
+
+.case-outcome__star {
+    color: var(--outcome-accent);
+}
+
+/* Focus ------------------------------------------------------------------- */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline-color: var(--accent);
+}
+
+.site-footer :focus-visible,
+.site-menu :focus-visible,
+.statement :focus-visible,
+.contact-cta :focus-visible,
+.case-outcome :focus-visible,
+.principles :focus-visible,
+.identity-card :focus-visible,
+.home-about__card :focus-visible {
+    outline-color: var(--ink);
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Farel Zaghlul — Web developer & motion designer",
+  "short_name": "Farel Zaghlul",
+  "description": "Web developer dan motion designer di Jakarta.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0B0D",
+  "theme_color": "#0A0B0D",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
