@@ -373,11 +373,90 @@
                 ]
             },
             "reflection": "Kalau saya mengulang proyek ini, saya akan menulis tes untuk perhitungan tarif lebih awal. Harga adalah janji; kalau angkanya berubah tanpa sengaja, kepercayaan ikut berubah.",
+            "nextSlug": "isafe"
+        },
+        {
+            "slug": "isafe",
+            "order": 2,
+            "title": "iSafe",
+            "kind": "Sistem inventaris & toko",
+            "client": "Alhadhi Pratama",
+            "year": "2026",
+            "role": "Full-stack developer",
+            "duration": "1 bulan",
+            "team": "Solo developer, bersama pemilik toko",
+            "scope": "Manajemen unit IMEI, penjualan, analisis laba kotor & bersih, ekspor Excel, storefront publik",
+            "stack": [
+                "Laravel 12",
+                "PHP",
+                "MySQL",
+                "Tailwind CSS",
+                "Vite",
+                "OpenSpout"
+            ],
+            "external": "https://isafe.id",
+            "summary": "Aplikasi admin dan storefront untuk bisnis retail iPhone: pelacakan stok unit berbasis IMEI, pencatatan transaksi penjualan, analisis laba bersih, dan katalog online terhubung ke WhatsApp.",
+            "cardLine": "Stok per IMEI, omzet, laba, dan katalog toko dalam satu platform.",
+            "cover": "karta",
+            "coverAlt": "Antarmuka manajemen stok iPhone dan katalog toko iSafe.",
+            "background": "#0A1128",
+            "foreground": "#F2F1EB",
+            "accent": "#00B4D8",
+            "overview": [
+                "iSafe adalah sistem operasional retail iPhone milik Alhadhi Pratama. Bisnis ini memerlukan pencatatan setiap unit berdasarkan nomor IMEI unik, kondisi baterai (battery health), warna, dan kapasitas penyimpanan.",
+                "Sebelum sistem dibangun, pencatatan unit dan penghitungan laba bersih manual memakan waktu serta rawan selisih. Saya membangun sistem terpadu yang memadukan panel internal admin dengan katalog publik yang dapat langsung dilihat calon pembeli."
+            ],
+            "problem": {
+                "heading": "Satu model punya banyak varian dan IMEI unik. Margin harus presisi.",
+                "body": [
+                    "Bisnis jual-beli gadget bekas memiliki dinamika modal dan margin tipis per unit. Kesalahan pencatatan nomor IMEI dapat berakibat fatal pada garansi dan klaim pelanggan.",
+                    "Pemilik toko butuh rekap cepat harian dan bulanan: berapa unit yang terjual, berapa modal tertanam di stok gudang, dan berapa keuntungan bersih riil setelah dipotong biaya operasional."
+                ]
+            },
+            "approach": [
+                {
+                    "number": "01",
+                    "title": "Pelacakan ketat berbasis IMEI",
+                    "body": "Setiap unit iPhone yang masuk dicatat dengan nomor IMEI 15 digit yang divalidasi. Status unit bergerak otomatis dari Tersedia ke Terjual saat transaksi dibuat."
+                },
+                {
+                    "number": "02",
+                    "title": "Perhitungan laba kotor & bersih instan",
+                    "body": "Setiap transaksi mengunci harga modal beli dan harga jual saat itu juga, sehingga laporan omzet dan margin keuntungan tidak bergeser meskipun harga pasar berubah."
+                },
+                {
+                    "number": "03",
+                    "title": "Storefront publik terhubung ke WhatsApp",
+                    "body": "Pelanggan bisa melihat stok unit yang benar-benar siap di toko secara real-time dan langsung membuka percakapan WhatsApp dengan detail unit yang dipilih."
+                }
+            ],
+            "outcome": {
+                "title": "Operasional toko berjalan rapi dan terukur.",
+                "body": "Situs live di isafe.id dan digunakan aktif untuk pencatatan inventaris harian toko serta katalog pemasaran.",
+                "metrics": [
+                    {
+                        "value": "100%",
+                        "label": "pelacakan IMEI",
+                        "note": "Validasi integritas data tanpa duplikasi."
+                    },
+                    {
+                        "value": "Excel",
+                        "label": "ekspor laporan",
+                        "note": "Laporan stok & penjualan siap unduh."
+                    },
+                    {
+                        "value": "Live",
+                        "label": "storefront publik",
+                        "note": "Katalog real-time di isafe.id."
+                    }
+                ]
+            },
+            "reflection": "Menangani inventaris berbasis nomor seri unik mengajarkan pentingnya transaksi database (DB transaction) yang aman, agar status stok dan catatan keuangan tidak pernah mengalami race condition.",
             "nextSlug": "jembatan-armco"
         },
         {
             "slug": "jembatan-armco",
-            "order": 2,
+            "order": 3,
             "title": "Jembatan Armco",
             "kind": "Motion graphics & video",
             "client": "Proyek independen",
@@ -449,11 +528,165 @@
                 ]
             },
             "reflection": "Bagian tersulit dalam video teknis bukan membuat efeknya terlihat rumit, tetapi tahu kapan harus berhenti dan membiarkan gambar berbicara.",
+            "nextSlug": "pencapaian-tni-ad"
+        },
+        {
+            "slug": "pencapaian-tni-ad",
+            "order": 4,
+            "title": "Pencapaian Program Kerja TNI AD",
+            "kind": "Motion graphics & video dokumentasi",
+            "client": "TNI AD",
+            "year": "2026",
+            "role": "Video editor & motion designer",
+            "duration": "Proyek dinas",
+            "team": "Editor & motion designer, bekerja bersama tim dokumentasi",
+            "scope": "Penyusunan alur cerita, motion graphics data, tipografi militer, color grading, audio mixing",
+            "stack": [
+                "Premiere Pro",
+                "After Effects",
+                "Photoshop"
+            ],
+            "external": null,
+            "summary": "Video presentasi evaluasi semester dan capaian program kerja TNI AD: visualisasi data pencapaian, infografis dinamis, dan editing terstruktur.",
+            "cardLine": "Visualisasi dinamis laporan capaian dan evaluasi program kerja militer.",
+            "cover": "motion",
+            "coverAlt": "Still frame video pencapaian program kerja TNI AD dengan tipografi tegas dan palet hijau army.",
+            "background": "#0F1710",
+            "foreground": "#F2F1EB",
+            "accent": "#70E000",
+            "overview": [
+                "Video dokumentasi dan laporan capaian program kerja semester TNI AD. Menggabungkan rekaman kegiatan lapangan, infografis data statistik, dan narasi evaluasi program kerja.",
+                "Tantangan utama adalah menyajikan data angka dan target kerja yang padat menjadi tayangan visual yang tegas, formal, dan mudah dipahami dalam forum rapat evaluasi komando."
+            ],
+            "problem": {
+                "heading": "Banyak data capaian, durasi terbatas, pesan harus tegas.",
+                "body": [
+                    "Laporan evaluasi militer berisi ratusan butir data fisik dan anggaran. Jika hanya dibacakan seperti slide presentasi, perhatian audiens akan cepat menurun.",
+                    "Perlu tempo yang dinamis antara visual dokumentasi lapangan dengan teks penjelas data gerak agar suasana kerja terasa nyata."
+                ]
+            },
+            "approach": [
+                {
+                    "number": "01",
+                    "title": "Tipografi dan hierarki data tegas",
+                    "body": "Menggunakan font sans-serif tebal dengan kontras tinggi dan layout simetris yang mencerminkan identitas disiplin militer."
+                },
+                {
+                    "number": "02",
+                    "title": "Infografis data berbasis gerak",
+                    "body": "Setiap persentase capaian dan grafik divisualisasikan dengan animasi After Effects yang bergerak sinkron dengan ketukan ritme audio."
+                },
+                {
+                    "number": "03",
+                    "title": "Color grading atmosfer lapangan",
+                    "body": "Pewarnaan rekaman diselaraskan dalam nuansa foliage green dan dark slate untuk menyatukan puluhan klip dari berbagai kamera berbeda."
+                }
+            ],
+            "outcome": {
+                "title": "Presentasi evaluasi yang berbobot dan mengalir.",
+                "body": "Video digunakan sebagai pembuka dan materi visual resmi pada rapat evaluasi semester kerja satuan.",
+                "metrics": [
+                    {
+                        "value": "1080p",
+                        "label": "resolusi master",
+                        "note": "Grading warna & audio mastering penuh."
+                    },
+                    {
+                        "value": "2026",
+                        "label": "tahun produksi",
+                        "note": "Rapat evaluasi program kerja."
+                    },
+                    {
+                        "value": "1",
+                        "label": "alur utuh",
+                        "note": "Dari opening, data, hingga closing dinas."
+                    }
+                ]
+            },
+            "reflection": "Video institusi menuntut ketepatan istilah, etika seragam, dan tata cara visual yang ketat. Kerapian detail adalah kunci.",
+            "nextSlug": "petstay"
+        },
+        {
+            "slug": "petstay",
+            "order": 5,
+            "title": "PetStay",
+            "kind": "Platform reservasi pet hotel",
+            "client": "Proyek mandiri",
+            "year": "2025",
+            "role": "Web developer & antarmuka",
+            "duration": "Proyek mandiri",
+            "team": "Solo",
+            "scope": "Katalog kamar, sistem booking layanan, integrasi panel admin Filament, desain antarmuka",
+            "stack": [
+                "Laravel",
+                "Filament",
+                "Tailwind CSS",
+                "Blade",
+                "MySQL"
+            ],
+            "external": null,
+            "summary": "Website layanan penitipan dan perawatan hewan peliharaan (pet hotel & daycare): katalog tipe kamar, reservasi layanan, dan panel admin Filament.",
+            "cardLine": "Reservasi kamar, perawatan, dan pantauan hotel hewan peliharaan.",
+            "cover": "karta",
+            "coverAlt": "Desain antarmuka reservasi pet hotel PetStay bernuansa hijau segar.",
+            "background": "#14281D",
+            "foreground": "#F2F1EB",
+            "accent": "#52B788",
+            "overview": [
+                "PetStay adalah aplikasi berbasis web untuk penyedia jasa pet boarding dan grooming hewan peliharaan. Pemilik hewan dapat melihat fasilitas ruangan, layanan kesehatan, dan ketersediaan slot kamar.",
+                "Dibangun menggunakan Laravel dengan panel admin Filament untuk memudahkan staf hotel mengelola pemesanan, data hewan, dan riwayat perawatan tamu berbulu."
+            ],
+            "problem": {
+                "heading": "Pemilik butuh rasa aman saat menitipkan hewan kesayangan.",
+                "body": [
+                    "Menitipkan hewan peliharaan adalah keputusan berbasis kepercayaan. Informasi fasilitas kamar, kebersihan, dan pemantauan harus tersampaikan transparan sejak halaman pertama.",
+                    "Staf operasional juga membutuhkan antarmuka backend yang cepat untuk memeriksa kamar kosong tanpa harus membuka buku catatan manual."
+                ]
+            },
+            "approach": [
+                {
+                    "number": "01",
+                    "title": "Katalog kamar visual & spesifikasi jelas",
+                    "body": "Halaman menampilkan ukuran kandang/kamar, fasilitas AC, akses CCTV, serta kapasitas berat hewan yang sesuai."
+                },
+                {
+                    "number": "02",
+                    "title": "Admin terstruktur dengan Filament",
+                    "body": "Filament Resource dimanfaatkan untuk CRUD data hewan, status check-in/check-out, dan rekap tagihan layanan tambahan."
+                },
+                {
+                    "number": "03",
+                    "title": "Antarmuka hangat dan ramah",
+                    "body": "Palet warna hijau alam dan earth-tone dipadukan dengan tipografi modern untuk menghadirkan kesan terawat dan profesional."
+                }
+            ],
+            "outcome": {
+                "title": "Sistem reservasi siap pakai untuk bisnis penitipan.",
+                "body": "Aplikasi mengintegrasikan alur depan untuk pelanggan dan dashboard belakang untuk admin.",
+                "metrics": [
+                    {
+                        "value": "4",
+                        "label": "tipe kamar",
+                        "note": "Standard, Deluxe, VIP, dan Suite."
+                    },
+                    {
+                        "value": "Filament",
+                        "label": "panel admin",
+                        "note": "Kelola kamar, reservasi, dan klien."
+                    },
+                    {
+                        "value": "Responsive",
+                        "label": "mobile first",
+                        "note": "Nyaman dibuka di smartphone."
+                    }
+                ]
+            },
+            "reflection": "Membangun aplikasi vertikal spesifik (pet care) membutuhkan pemahaman mendalam tentang kebutuhan emosional pelanggan dan kepraktisan staf di lapangan.",
             "nextSlug": "portofolio-2026"
         },
         {
             "slug": "portofolio-2026",
-            "order": 3,
+            "order": 6,
             "title": "Portofolio 2026",
             "kind": "Website pribadi",
             "client": "Proyek pribadi",
