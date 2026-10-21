@@ -86,11 +86,11 @@ export default function Work({ projects: serverProjects }) {
             transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
         >
             <div className="work-preview__cover">
-                <ProjectCover project={active ?? projects[0]} />
+                <ProjectCover project={active ?? projectList[0]} />
             </div>
             <div className="work-preview__caption">
-                <span>{active?.title ?? projects[0].title}</span>
-                <span>{active?.year ?? projects[0].year}</span>
+                <span>{active?.title ?? projectList[0]?.title}</span>
+                <span>{active?.year ?? projectList[0]?.year}</span>
             </div>
         </motion.div>
     );

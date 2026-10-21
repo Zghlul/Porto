@@ -167,14 +167,59 @@ function Portfolio() {
     );
 }
 
+function Editorial({ project }) {
+    return (
+        <div className="cover__scene portfolio">
+            <div className="portfolio__top">
+                <span>{project.client || 'Proyek pilihan'}</span>
+                <span className="cover-caption">{project.kind} / {project.year}</span>
+            </div>
+
+            <div className="portfolio__type">
+                <span>{project.title}</span>
+                <span className="portfolio__type-dot">.</span>
+            </div>
+
+            <div className="portfolio__card">
+                <div className="portfolio__card-top">
+                    <span>{project.role || 'Karya'}</span>
+                    <span>{project.year}</span>
+                </div>
+                <div className="portfolio__card-body">
+                    <span className="portfolio__card-kicker">{project.client || project.kind}</span>
+                    <strong>{project.cardLine || project.summary}</strong>
+                    <div className="portfolio__swatches" aria-hidden="true">
+                        <span />
+                        <span />
+                        <span />
+                    </div>
+                </div>
+                <div className="portfolio__card-foot">
+                    <span>{(project.stack ?? []).slice(0, 3).join(' / ')}</span>
+                    <span>{project.kind}</span>
+                </div>
+            </div>
+
+            <div className="portfolio__side">{project.slug}</div>
+            <div className="portfolio__number">{String(project.order).padStart(2, '0')}</div>
+            <div className="portfolio__foot">
+                <span>{project.summary}</span>
+                <span>{project.year}</span>
+            </div>
+        </div>
+    );
+}
+
 const scenes = {
     karta: Ice,
     motion: Motion,
     portfolio: Portfolio,
 };
 
+const originalProjects = new Set(['indo-cahaya-express', 'jembatan-armco', 'portofolio-2026']);
+
 export default function ProjectCover({ project, className = '' }) {
-    const Scene = scenes[project.cover] ?? Ice;
+    const Scene = originalProjects.has(project.slug) ? scenes[project.cover] : Editorial;
 
     return (
         <div
@@ -189,7 +234,7 @@ export default function ProjectCover({ project, className = '' }) {
         >
             <div className="cover__grid" aria-hidden="true" />
             <div aria-hidden="true" className="cover__content">
-                <Scene />
+                <Scene project={project} />
             </div>
             <div className="cover__grain" aria-hidden="true" />
         </div>
