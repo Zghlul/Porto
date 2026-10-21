@@ -7,7 +7,6 @@
 /storage/pail
 /vendor
 /*.mp4
-/ProjekPortofolio
 .env
 .env.backup
 .env.production

@@ -1,427 +1,550 @@
 {
-  "site": {
-    "name": "Farel Zaghlul",
-    "fullName": "Muhammad Farel Zaghlul Arifli",
-    "firstName": "Farel",
-    "initials": "FZ",
-    "role": "Web developer & motion designer",
-    "shortRole": "Web developer & motion designer",
-    "location": "Jakarta, Indonesia",
-    "city": "Jakarta",
-    "timezone": "Asia/Jakarta",
-    "coordinates": "6°12′ S / 106°49′ E",
-    "email": "farelzaghlul@gmail.com",
-    "url": "https://farelzaghlul.com",
-    "portrait": "/images/farel-portrait.jpg",
-    "portraitAlt": "Farel Zaghlul di tepi pantai, mengenakan kemeja bermotif dan menatap ke samping.",
-    "availability": {
-      "label": "Terbuka untuk proyek & magang",
-      "detail": "Web, antarmuka, dan motion graphics"
+    "site": {
+        "name": "Farel Zaghlul",
+        "fullName": "Muhammad Farel Zaghlul Arifli",
+        "firstName": "Farel",
+        "initials": "FZ",
+        "role": "Web developer & motion designer",
+        "shortRole": "Web developer & motion designer",
+        "location": "Jakarta, Indonesia",
+        "city": "Jakarta",
+        "timezone": "Asia/Jakarta",
+        "coordinates": "6°12′ S / 106°49′ E",
+        "email": "farelzaghlul@gmail.com",
+        "url": "https://farelzaghlul.com",
+        "portrait": "/images/farel-portrait.jpg",
+        "portraitAlt": "Farel Zaghlul di tepi pantai, mengenakan kemeja bermotif dan menatap ke samping.",
+        "availability": {
+            "label": "Terbuka untuk proyek & magang",
+            "detail": "Web, antarmuka, dan motion graphics"
+        },
+        "hero": {
+            "eyebrow": "Farel Zaghlul — Web developer & motion designer",
+            "title": [
+                "Farel",
+                "Zaghlul"
+            ],
+            "description": "Saya membangun website dan sistem dengan Laravel, merancang antarmukanya, lalu mengolah visual dan motion saat sebuah ide perlu bergerak."
+        },
+        "socials": [
+            {
+                "label": "GitHub",
+                "handle": "@Zghlul",
+                "url": "https://github.com/Zghlul"
+            },
+            {
+                "label": "Email",
+                "handle": "farelzaghlul@gmail.com",
+                "url": "mailto:farelzaghlul@gmail.com"
+            }
+        ],
+        "footerNote": "Jakarta, Indonesia. Mahasiswa, developer, dan pembuat visual."
     },
-    "hero": {
-      "eyebrow": "Farel Zaghlul — Web developer & motion designer",
-      "title": ["Farel", "Zaghlul"],
-      "description": "Saya membangun website dan sistem dengan Laravel, merancang antarmukanya, lalu mengolah visual dan motion saat sebuah ide perlu bergerak."
-    },
-    "socials": [
-      {
-        "label": "GitHub",
-        "handle": "@Zghlul",
-        "url": "https://github.com/Zghlul"
-      },
-      {
-        "label": "Email",
-        "handle": "farelzaghlul@gmail.com",
-        "url": "mailto:farelzaghlul@gmail.com"
-      }
-    ],
-    "footerNote": "Jakarta, Indonesia. Mahasiswa, developer, dan pembuat visual."
-  },
-  "navigation": [
-    { "label": "Karya", "href": "/work" },
-    { "label": "Tentang", "href": "/about" },
-    { "label": "Kontak", "href": "/contact" }
-  ],
-  "home": {
-    "work": {
-      "label": "Karya pilihan",
-      "title": "Beberapa hal yang saya bangun.",
-      "intro": "Tiga proyek, tiga cara berbeda untuk menyelesaikan masalah. Satu di antaranya dipakai setiap hari."
-    },
-    "statement": {
-      "label": "Cara saya bekerja",
-      "title": "Tampilan boleh tenang. Sistem di belakangnya harus rapi.",
-      "body": "Saya menikmati bagian yang jarang terlihat: alur data, keadaan kosong, pesan error, dan detail kecil yang membuat sesuatu terasa selesai. Saya bisa menulis Laravel, merapikan antarmuka, lalu membuat motion untuk menjelaskannya."
-    },
-    "capabilities": {
-      "label": "Yang saya kerjakan",
-      "title": "Kode, desain, dan gerak.",
-      "intro": "Saya bekerja di antara tiga disiplin. Ketiganya saling membantu: desain membuat sistem lebih mudah dipakai, kode membuatnya nyata, motion membuat idenya lebih mudah dipahami.",
-      "items": [
+    "navigation": [
         {
-          "number": "01",
-          "title": "Web development",
-          "copy": "Website dan sistem yang menangani data nyata: tarif, order, invoice, admin, dan pelacakan. Saya lebih suka membangun alur yang bisa dirawat daripada halaman yang hanya bagus saat demo.",
-          "tools": ["Laravel", "PHP", "JavaScript", "MySQL", "Git"]
+            "label": "Karya",
+            "href": "/work"
         },
         {
-          "number": "02",
-          "title": "Antarmuka & visual",
-          "copy": "Struktur halaman, tipografi, warna, dan aset visual. Latar DKV membuat saya terbiasa mengerjakan detail, sementara pengalaman membangun membuat desainnya tetap masuk akal secara teknis.",
-          "tools": ["Photoshop", "Illustrator", "Layout", "Tipografi"]
+            "label": "Tentang",
+            "href": "/about"
         },
         {
-          "number": "03",
-          "title": "Motion & video",
-          "copy": "Motion graphics dan penyuntingan untuk menjelaskan ide, membangun suasana, atau membuat materi teknis lebih mudah diikuti. Tidak semua hal perlu bergerak, tapi sebagian lebih jelas kalau bergerak.",
-          "tools": ["After Effects", "Premiere Pro", "Alight Motion"]
+            "label": "Kontak",
+            "href": "/contact"
         }
-      ]
+    ],
+    "home": {
+        "work": {
+            "label": "Karya pilihan",
+            "title": "Beberapa hal yang saya bangun.",
+            "intro": "Tiga proyek, tiga cara berbeda untuk menyelesaikan masalah. Satu di antaranya dipakai setiap hari."
+        },
+        "statement": {
+            "label": "Cara saya bekerja",
+            "title": "Tampilan boleh tenang. Sistem di belakangnya harus rapi.",
+            "body": "Saya menikmati bagian yang jarang terlihat: alur data, keadaan kosong, pesan error, dan detail kecil yang membuat sesuatu terasa selesai. Saya bisa menulis Laravel, merapikan antarmuka, lalu membuat motion untuk menjelaskannya."
+        },
+        "capabilities": {
+            "label": "Yang saya kerjakan",
+            "title": "Kode, desain, dan gerak.",
+            "intro": "Saya bekerja di antara tiga disiplin. Ketiganya saling membantu: desain membuat sistem lebih mudah dipakai, kode membuatnya nyata, motion membuat idenya lebih mudah dipahami.",
+            "items": [
+                {
+                    "number": "01",
+                    "title": "Web development",
+                    "copy": "Website dan sistem yang menangani data nyata: tarif, order, invoice, admin, dan pelacakan. Saya lebih suka membangun alur yang bisa dirawat daripada halaman yang hanya bagus saat demo.",
+                    "tools": [
+                        "Laravel",
+                        "PHP",
+                        "JavaScript",
+                        "MySQL",
+                        "Git"
+                    ]
+                },
+                {
+                    "number": "02",
+                    "title": "Antarmuka & visual",
+                    "copy": "Struktur halaman, tipografi, warna, dan aset visual. Latar DKV membuat saya terbiasa mengerjakan detail, sementara pengalaman membangun membuat desainnya tetap masuk akal secara teknis.",
+                    "tools": [
+                        "Photoshop",
+                        "Illustrator",
+                        "Layout",
+                        "Tipografi"
+                    ]
+                },
+                {
+                    "number": "03",
+                    "title": "Motion & video",
+                    "copy": "Motion graphics dan penyuntingan untuk menjelaskan ide, membangun suasana, atau membuat materi teknis lebih mudah diikuti. Tidak semua hal perlu bergerak, tapi sebagian lebih jelas kalau bergerak.",
+                    "tools": [
+                        "After Effects",
+                        "Premiere Pro",
+                        "Alight Motion"
+                    ]
+                }
+            ]
+        },
+        "about": {
+            "label": "Tentang",
+            "title": "Dari kelas DKV ke sistem informasi.",
+            "body": "Saya mulai dari desain dan motion, sekarang menempuh S1 Sistem Informasi sambil mengerjakan website dan video. Latar visual membuat saya peduli detail; logika sistem membuat saya bertanya bagaimana semuanya bekerja.",
+            "link": "Kenalan lebih jauh"
+        },
+        "now": {
+            "label": "Sekarang",
+            "title": "Sedang dibangun.",
+            "items": [
+                {
+                    "label": "Proyek",
+                    "value": "Indo Cahaya Express: web, tarif, invoice, dan tracking."
+                },
+                {
+                    "label": "Belajar",
+                    "value": "React, service layer Laravel, dan motion yang lebih rapi."
+                },
+                {
+                    "label": "Terbuka",
+                    "value": "Proyek web, desain, atau magang."
+                }
+            ],
+            "linkLabel": "Mulai percakapan"
+        },
+        "contact": {
+            "label": "Kolaborasi",
+            "title": "Ada yang ingin dibuat?",
+            "body": "Saya terbuka untuk proyek website, desain antarmuka, motion graphics, atau kesempatan magang. Tidak perlu brief yang sempurna; ceritakan saja masalahnya.",
+            "button": "Mulai percakapan"
+        }
     },
     "about": {
-      "label": "Tentang",
-      "title": "Dari kelas DKV ke sistem informasi.",
-      "body": "Saya mulai dari desain dan motion, sekarang menempuh S1 Sistem Informasi sambil mengerjakan website dan video. Latar visual membuat saya peduli detail; logika sistem membuat saya bertanya bagaimana semuanya bekerja.",
-      "link": "Kenalan lebih jauh"
-    },
-    "now": {
-      "label": "Sekarang",
-      "title": "Sedang dibangun.",
-      "items": [
-        {
-          "label": "Proyek",
-          "value": "Indo Cahaya Express: web, tarif, invoice, dan tracking."
+        "eyebrow": "Tentang",
+        "title": "Di antara desain dan sistem.",
+        "intro": "Saya Farel, mahasiswa Sistem Informasi di STT Terpadu Nurul Fikri. Saya mengerjakan website, sistem, desain visual, dan motion graphics. Latar DKV membuat saya terbiasa melihat; kuliah membuat saya ingin tahu cara kerjanya.",
+        "body": [
+            "Saya mulai dari DKV di SMK Pariwisata Metland. Di sana saya belajar Photoshop, Illustrator, After Effects, dan Premiere. Saya sempat menerima proyek animasi, menjadi bagian dari dokumentasi RAKERNAS Jakarta, dan menyunting film pendek BULLY yang meraih juara 3 di sekolah.",
+            "Sekarang saya menempuh S1 Sistem Informasi dan terlibat di Indo Cahaya Express, baik di sisi operasional maupun pengembangan web. Melihat dua sisi ini membuat saya sadar bahwa antarmuka yang rapi harus ditopang data dan proses yang benar.",
+            "Saya belum ingin memilih salah satu. Saya suka membuat sistem yang bekerja, tetapi saya juga peduli bagaimana ia terlihat dan terasa. Portfolio ini adalah tempat saya mencoba menyatukan keduanya."
+        ],
+        "facts": [
+            {
+                "label": "Berbasis di",
+                "value": "Jakarta, Indonesia"
+            },
+            {
+                "label": "Kuliah",
+                "value": "S1 Sistem Informasi, 2025"
+            },
+            {
+                "label": "Fokus",
+                "value": "Web, antarmuka, motion"
+            },
+            {
+                "label": "Status",
+                "value": "Terbuka untuk proyek & magang"
+            }
+        ],
+        "principles": {
+            "label": "Cara saya bekerja",
+            "title": "Empat hal yang saya pegang.",
+            "items": [
+                {
+                    "number": "01",
+                    "title": "Yang penting bisa dipakai",
+                    "copy": "Mockup yang bagus belum menyelesaikan masalah. Saya lebih suka versi yang jalan, lalu dirapikan dari umpan balik nyata."
+                },
+                {
+                    "number": "02",
+                    "title": "Detail kecil itu bagian dari desain",
+                    "copy": "Keadaan kosong, pesan error, dan teks tombol saya perlakukan sama seriusnya dengan halaman utama."
+                },
+                {
+                    "number": "03",
+                    "title": "Konsisten lebih baik daripada ramai",
+                    "copy": "Saya memilih satu sistem, lalu menjalankannya dengan rapi. Tidak setiap halaman perlu menjadi kejutan."
+                },
+                {
+                    "number": "04",
+                    "title": "Belajar dari proyek nyata",
+                    "copy": "Saya belajar paling cepat ketika ada pengguna, data asli, dan tenggat. Tutorial hanya pembuka."
+                }
+            ]
         },
-        {
-          "label": "Belajar",
-          "value": "React, service layer Laravel, dan motion yang lebih rapi."
+        "experience": {
+            "label": "Pengalaman",
+            "title": "Catatan singkat.",
+            "items": [
+                {
+                    "years": "2026 — Sekarang",
+                    "company": "Indo Cahaya Express",
+                    "role": "Web developer & operasional",
+                    "location": "Jakarta",
+                    "copy": "Membangun dan merawat situs serta sistem internal: kalkulator tarif, booking, invoice, admin, dan pelacakan. Juga terlibat dalam proses operasional harian."
+                },
+                {
+                    "years": "2026",
+                    "company": "ASTRO 2026",
+                    "role": "Contact person AGT",
+                    "location": "Depok",
+                    "copy": "Panitia akademik BEM STT-NF untuk ASTRO Fest & Competition 8.0. Menjadi contact person lomba dan membantu koordinasi rangkaian acara."
+                },
+                {
+                    "years": "2020 — 2021",
+                    "company": "Freelance",
+                    "role": "Animator & editor",
+                    "location": "Remote",
+                    "copy": "Menerima proyek motion graphics, aset YouTube, dokumentasi RAKERNAS Jakarta, dan penyuntingan film pendek BULLY yang meraih juara 3."
+                }
+            ]
         },
-        {
-          "label": "Terbuka",
-          "value": "Proyek web, desain, atau magang."
+        "toolkit": {
+            "label": "Perangkat",
+            "groups": [
+                {
+                    "title": "Kode",
+                    "items": [
+                        "Laravel",
+                        "PHP",
+                        "JavaScript",
+                        "React",
+                        "MySQL",
+                        "Git"
+                    ]
+                },
+                {
+                    "title": "Visual & motion",
+                    "items": [
+                        "After Effects",
+                        "Premiere Pro",
+                        "Photoshop",
+                        "Illustrator",
+                        "Alight Motion"
+                    ]
+                },
+                {
+                    "title": "Cara kerja",
+                    "items": [
+                        "Dokumentasi",
+                        "Public speaking",
+                        "Koordinasi acara",
+                        "Kamera"
+                    ]
+                }
+            ]
+        },
+        "currently": {
+            "label": "Di luar layar",
+            "items": [
+                {
+                    "label": "Sedang",
+                    "value": "Mengerjakan Indo Cahaya Express dan portfolio ini."
+                },
+                {
+                    "label": "Belajar",
+                    "value": "React, Laravel, dan motion graphics."
+                },
+                {
+                    "label": "Hobi",
+                    "value": "Badminton, renang, dan gitar."
+                },
+                {
+                    "label": "Lokasi",
+                    "value": "Jakarta, Indonesia."
+                }
+            ]
         }
-      ],
-      "linkLabel": "Mulai percakapan"
     },
     "contact": {
-      "label": "Kolaborasi",
-      "title": "Ada yang ingin dibuat?",
-      "body": "Saya terbuka untuk proyek website, desain antarmuka, motion graphics, atau kesempatan magang. Tidak perlu brief yang sempurna; ceritakan saja masalahnya.",
-      "button": "Mulai percakapan"
-    }
-  },
-  "about": {
-    "eyebrow": "Tentang",
-    "title": "Di antara desain dan sistem.",
-    "intro": "Saya Farel, mahasiswa Sistem Informasi di STT Terpadu Nurul Fikri. Saya mengerjakan website, sistem, desain visual, dan motion graphics. Latar DKV membuat saya terbiasa melihat; kuliah membuat saya ingin tahu cara kerjanya.",
-    "body": [
-      "Saya mulai dari DKV di SMK Pariwisata Metland. Di sana saya belajar Photoshop, Illustrator, After Effects, dan Premiere. Saya sempat menerima proyek animasi, menjadi bagian dari dokumentasi RAKERNAS Jakarta, dan menyunting film pendek BULLY yang meraih juara 3 di sekolah.",
-      "Sekarang saya menempuh S1 Sistem Informasi dan terlibat di Indo Cahaya Express, baik di sisi operasional maupun pengembangan web. Melihat dua sisi ini membuat saya sadar bahwa antarmuka yang rapi harus ditopang data dan proses yang benar.",
-      "Saya belum ingin memilih salah satu. Saya suka membuat sistem yang bekerja, tetapi saya juga peduli bagaimana ia terlihat dan terasa. Portfolio ini adalah tempat saya mencoba menyatukan keduanya."
-    ],
-    "facts": [
-      { "label": "Berbasis di", "value": "Jakarta, Indonesia" },
-      { "label": "Kuliah", "value": "S1 Sistem Informasi, 2025" },
-      { "label": "Fokus", "value": "Web, antarmuka, motion" },
-      { "label": "Status", "value": "Terbuka untuk proyek & magang" }
-    ],
-    "principles": {
-      "label": "Cara saya bekerja",
-      "title": "Empat hal yang saya pegang.",
-      "items": [
-        {
-          "number": "01",
-          "title": "Yang penting bisa dipakai",
-          "copy": "Mockup yang bagus belum menyelesaikan masalah. Saya lebih suka versi yang jalan, lalu dirapikan dari umpan balik nyata."
-        },
-        {
-          "number": "02",
-          "title": "Detail kecil itu bagian dari desain",
-          "copy": "Keadaan kosong, pesan error, dan teks tombol saya perlakukan sama seriusnya dengan halaman utama."
-        },
-        {
-          "number": "03",
-          "title": "Konsisten lebih baik daripada ramai",
-          "copy": "Saya memilih satu sistem, lalu menjalankannya dengan rapi. Tidak setiap halaman perlu menjadi kejutan."
-        },
-        {
-          "number": "04",
-          "title": "Belajar dari proyek nyata",
-          "copy": "Saya belajar paling cepat ketika ada pengguna, data asli, dan tenggat. Tutorial hanya pembuka."
-        }
-      ]
+        "eyebrow": "Kontak / Terbuka",
+        "title": "Ada yang ingin dibuat?",
+        "intro": "Ceritakan proyek atau masalah yang sedang Anda hadapi. Saya terbuka untuk website, sistem, desain antarmuka, motion graphics, dan magang. Saya akan balas dengan jujur, termasuk kalau proyeknya belum cocok untuk saya.",
+        "availability": "Saat ini saya kuliah sambil bekerja. Waktu pengerjaan proyek akan saya sampaikan sejak awal.",
+        "response": "Saya membaca semua pesan dan biasanya membalas dalam 1–2 hari.",
+        "privacy": "Pesan Anda sampai langsung ke saya. Tidak ada newsletter atau daftar email.",
+        "projectTypes": [
+            "Website / sistem web",
+            "Desain antarmuka",
+            "Motion graphics / video",
+            "Visual & aset digital",
+            "Lainnya"
+        ],
+        "budgets": [
+            "Di bawah Rp1 juta",
+            "Rp1–3 juta",
+            "Rp3–7 juta",
+            "Rp7 juta+",
+            "Belum tahu"
+        ]
     },
-    "experience": {
-      "label": "Pengalaman",
-      "title": "Catatan singkat.",
-      "items": [
+    "projects": [
         {
-          "years": "2026 — Sekarang",
-          "company": "Indo Cahaya Express",
-          "role": "Web developer & operasional",
-          "location": "Jakarta",
-          "copy": "Membangun dan merawat situs serta sistem internal: kalkulator tarif, booking, invoice, admin, dan pelacakan. Juga terlibat dalam proses operasional harian."
+            "slug": "indo-cahaya-express",
+            "order": 1,
+            "title": "Indo Cahaya Express",
+            "kind": "Web & sistem ekspedisi",
+            "client": "Indo Cahaya Express",
+            "year": "2026",
+            "role": "Web developer & operasional",
+            "duration": "Berjalan",
+            "team": "Developer web, bersama tim operasional",
+            "scope": "Alur pengguna, Laravel, integrasi tarif, admin, invoice",
+            "stack": [
+                "Laravel",
+                "PHP",
+                "MySQL",
+                "Blade",
+                "JavaScript"
+            ],
+            "external": "https://indocahayaexpress.com",
+            "summary": "Website dan sistem operasional untuk perusahaan ekspedisi: kalkulator tarif, booking, invoice, dan pelacakan dalam satu alur.",
+            "cardLine": "Tarif, order, invoice, dan tracking dalam satu sistem.",
+            "cover": "karta",
+            "coverAlt": "Ilustrasi antarmuka sistem Indo Cahaya Express dengan rute pengiriman dan kalkulator tarif.",
+            "background": "#08101F",
+            "foreground": "#F2F1EB",
+            "accent": "#FF4B3E",
+            "overview": [
+                "Indo Cahaya Express mengirim paket dan kargo ke luar negeri. Situsnya bukan hanya halaman profil: ada kalkulator tarif, proses booking, invoice, akun pelanggan, dan panel admin yang dipakai tim setiap hari.",
+                "Saya mengerjakan pengembangan web dan juga terlibat dalam operasional. Itu membantu saya memahami bahwa satu perubahan kecil di kalkulator bisa berdampak ke booking, invoice, dan laporan."
+            ],
+            "problem": {
+                "heading": "Tarif punya banyak aturan. Alurnya harus tetap sederhana.",
+                "body": [
+                    "Setiap layanan punya dasar perhitungan berbeda: berat fisik atau volumetrik, surcharge, nilai barang, dan kurs. Data tarif tersebar di beberapa tabel dan harus konsisten dari kalkulator sampai invoice.",
+                    "Di sisi lain, pelanggan hanya ingin tahu dua hal: berapa biayanya dan di mana paketnya. Pekerjaan utamanya adalah menjaga kerumitan itu tetap di belakang layar."
+                ]
+            },
+            "approach": [
+                {
+                    "number": "01",
+                    "title": "Satu sumber perhitungan",
+                    "body": "Saya memusatkan logika tarif di service layer supaya kalkulator, booking, dan invoice memakai aturan yang sama. Perubahan tarif tidak perlu dilakukan di banyak tempat."
+                },
+                {
+                    "number": "02",
+                    "title": "Alur yang tidak bisa diubah di tengah jalan",
+                    "body": "Penawaran disimpan sebagai token yang kedaluwarsa, sehingga harga yang dilihat pelanggan tetap sama saat mereka melanjutkan booking."
+                },
+                {
+                    "number": "03",
+                    "title": "Admin yang mengikuti pekerjaan nyata",
+                    "body": "Panel admin mengikuti siklus pengiriman, invoice, dan data pelanggan. Tracking dari 17TRACK dipetakan ke status yang bisa dipahami tim dan pelanggan."
+                }
+            ],
+            "outcome": {
+                "title": "Satu sistem untuk pekerjaan yang berulang.",
+                "body": "Situs ini berjalan di produksi dan terus dirawat. Fitur-fiturnya menyatukan pekerjaan yang sebelumnya tersebar: menghitung tarif, membuat order, menerbitkan invoice, dan mencari posisi paket.",
+                "metrics": [
+                    {
+                        "value": "7",
+                        "label": "tabel tarif",
+                        "note": "DHL, FedEx, SingPost, USPS, Tlx, Aramex, dan TGE."
+                    },
+                    {
+                        "value": "27",
+                        "label": "negara di data tarif",
+                        "note": "Dipakai sebagai dasar perhitungan layanan."
+                    },
+                    {
+                        "value": "1",
+                        "label": "alur dari tarif ke invoice",
+                        "note": "Dengan satu sumber logika harga."
+                    }
+                ]
+            },
+            "reflection": "Kalau saya mengulang proyek ini, saya akan menulis tes untuk perhitungan tarif lebih awal. Harga adalah janji; kalau angkanya berubah tanpa sengaja, kepercayaan ikut berubah.",
+            "nextSlug": "jembatan-armco"
         },
         {
-          "years": "2026",
-          "company": "ASTRO 2026",
-          "role": "Contact person AGT",
-          "location": "Depok",
-          "copy": "Panitia akademik BEM STT-NF untuk ASTRO Fest & Competition 8.0. Menjadi contact person lomba dan membantu koordinasi rangkaian acara."
+            "slug": "jembatan-armco",
+            "order": 2,
+            "title": "Jembatan Armco",
+            "kind": "Motion graphics & video",
+            "client": "Proyek independen",
+            "year": "2025",
+            "role": "Editor & motion designer",
+            "duration": "Proyek mandiri",
+            "team": "Solo",
+            "scope": "Editing, motion graphics, tipografi, color grade",
+            "stack": [
+                "After Effects",
+                "Premiere Pro",
+                "Illustrator"
+            ],
+            "external": null,
+            "summary": "Video motion graphic yang menjelaskan pembangunan jembatan gantung, dari struktur sampai tahap akhir.",
+            "cardLine": "Menjelaskan konstruksi lewat gambar dan gerak.",
+            "cover": "motion",
+            "coverAlt": "Still video dokumentasi pembangunan jembatan dengan dua pekerja di atas struktur, diberi warna biru.",
+            "background": "#05070F",
+            "foreground": "#F2F1EB",
+            "accent": "#FF4B3E",
+            "overview": [
+                "Video ini membawa penonton melalui proses pembangunan Jembatan Armco: dari struktur utama sampai detail yang biasanya hanya terlihat oleh orang teknis.",
+                "Saya mengerjakan editing dan motion graphics, dengan fokus agar informasi tetap jelas tanpa kehilangan ketegangan visual dari sebuah konstruksi."
+            ],
+            "problem": {
+                "heading": "Teknis, tapi tidak boleh terasa seperti manual.",
+                "body": [
+                    "Material konstruksi punya banyak detail dan istilah. Kalau semuanya dimasukkan sekaligus, penonton berhenti mengikuti.",
+                    "Tantangannya adalah memilih apa yang perlu ditunjukkan, kapan harus berhenti, dan bagaimana teks serta gerakan membantu pemahaman."
+                ]
+            },
+            "approach": [
+                {
+                    "number": "01",
+                    "title": "Mulai dari struktur besar",
+                    "body": "Video dibuka dengan konteks dan bentuk keseluruhan, lalu perlahan masuk ke bagian yang lebih detail."
+                },
+                {
+                    "number": "02",
+                    "title": "Beri napas pada gambar",
+                    "body": "Tidak setiap detik perlu diisi teks. Saya memakai tempo dan ruang kosong agar gambar bisa bekerja."
+                },
+                {
+                    "number": "03",
+                    "title": "Jaga identitas tetap konsisten",
+                    "body": "Tipografi, warna, dan penempatan judul dibuat tetap agar video terasa sebagai satu bagian utuh, bukan kumpulan klip."
+                }
+            ],
+            "outcome": {
+                "title": "Dua menit yang menjelaskan banyak hal.",
+                "body": "Hasil akhirnya adalah video berdurasi 2 menit 37 detik yang menggabungkan rekaman, grafis, dan tipografi. Video ini menjadi salah satu contoh cara saya menerjemahkan materi teknis menjadi sesuatu yang bisa diikuti.",
+                "metrics": [
+                    {
+                        "value": "2:37",
+                        "label": "durasi akhir",
+                        "note": "Dari pembukaan sampai penutup."
+                    },
+                    {
+                        "value": "2025",
+                        "label": "tahun produksi",
+                        "note": "Dikerjakan sebagai proyek mandiri."
+                    },
+                    {
+                        "value": "1",
+                        "label": "orang di tim",
+                        "note": "Editing dan motion graphics."
+                    }
+                ]
+            },
+            "reflection": "Bagian tersulit dalam video teknis bukan membuat efeknya terlihat rumit, tetapi tahu kapan harus berhenti dan membiarkan gambar berbicara.",
+            "nextSlug": "portofolio-2026"
         },
         {
-          "years": "2020 — 2021",
-          "company": "Freelance",
-          "role": "Animator & editor",
-          "location": "Remote",
-          "copy": "Menerima proyek motion graphics, aset YouTube, dokumentasi RAKERNAS Jakarta, dan penyuntingan film pendek BULLY yang meraih juara 3."
+            "slug": "portofolio-2026",
+            "order": 3,
+            "title": "Portofolio 2026",
+            "kind": "Website pribadi",
+            "client": "Proyek pribadi",
+            "year": "2026",
+            "role": "Desain & pengembangan",
+            "duration": "Proyek pribadi",
+            "team": "Solo",
+            "scope": "Arah visual, antarmuka, Laravel, React, copywriting",
+            "stack": [
+                "Laravel",
+                "React",
+                "Inertia",
+                "Vite",
+                "CSS"
+            ],
+            "external": null,
+            "summary": "Situs yang sedang Anda lihat: portfolio dengan sistem tiga warna, halaman berbasis JavaScript, dan alur kontak yang berfungsi.",
+            "cardLine": "Satu sistem, tiga warna, tanpa template.",
+            "cover": "portfolio",
+            "coverAlt": "Komposisi tipografi portfolio Farel Zaghlul dengan warna biru, merah, dan hitam.",
+            "background": "#1F3BCF",
+            "foreground": "#F2F1EB",
+            "accent": "#FFB0A9",
+            "overview": [
+                "Saya ingin portfolio yang terasa seperti ruang kerja, bukan kumpulan kartu. Setiap halaman punya ritme, tipografi, dan alasan untuk ada.",
+                "Situs ini juga menjadi latihan teknis: Laravel untuk routing dan form, React dan Inertia untuk halaman, CSS untuk sistem visual tanpa template."
+            ],
+            "problem": {
+                "heading": "Portfolio harus menunjukkan cara berpikir, bukan hanya hasil.",
+                "body": [
+                    "Portfolio lama saya terlalu bergantung pada template dan efek. Isinya belum bercerita tentang bagaimana saya bekerja atau apa yang bisa saya lakukan.",
+                    "Saya butuh struktur yang bisa menampung proyek dengan panjang berbeda, tetap enak dibaca, dan tidak mengalihkan perhatian dari isinya."
+                ]
+            },
+            "approach": [
+                {
+                    "number": "01",
+                    "title": "Tiga warna, satu aturan",
+                    "body": "Hitam, merah, dan biru dipakai dengan peran yang jelas: hitam untuk ruang, merah untuk penanda, biru untuk bagian yang perlu berhenti dan dibaca."
+                },
+                {
+                    "number": "02",
+                    "title": "Tipografi sebagai struktur",
+                    "body": "Grid dan aturan tipografi dibuat lebih dulu, sebelum komponen. Ini menjaga halaman tetap konsisten saat isinya berubah."
+                },
+                {
+                    "number": "03",
+                    "title": "JavaScript untuk halaman, Laravel untuk sistem",
+                    "body": "Inertia menghubungkan halaman React dengan routing dan validasi Laravel. Form kontak benar-benar menyimpan pesan dan mengirim notifikasi."
+                }
+            ],
+            "outcome": {
+                "title": "Portfolio yang bisa saya rawat.",
+                "body": "Hasilnya adalah situs yang lebih tenang, cepat, dan mudah diperbarui. Saya bisa menambah proyek tanpa mendesain ulang halaman, dan form kontak bekerja dari ujung ke ujung.",
+                "metrics": [
+                    {
+                        "value": "6",
+                        "label": "template halaman",
+                        "note": "Termasuk studi kasus, tentang, kontak, dan 404."
+                    },
+                    {
+                        "value": "3",
+                        "label": "warna inti",
+                        "note": "Hitam, merah, biru."
+                    },
+                    {
+                        "value": "1",
+                        "label": "alur kontak",
+                        "note": "Validasi server, penyimpanan, dan notifikasi email."
+                    }
+                ]
+            },
+            "reflection": "Membangun portfolio sendiri berarti tidak ada klien yang menahan. Itu justru membuat setiap keputusan harus punya alasan.",
+            "nextSlug": "indo-cahaya-express"
         }
-      ]
-    },
-    "toolkit": {
-      "label": "Perangkat",
-      "groups": [
-        {
-          "title": "Kode",
-          "items": ["Laravel", "PHP", "JavaScript", "React", "MySQL", "Git"]
-        },
-        {
-          "title": "Visual & motion",
-          "items": ["After Effects", "Premiere Pro", "Photoshop", "Illustrator", "Alight Motion"]
-        },
-        {
-          "title": "Cara kerja",
-          "items": ["Dokumentasi", "Public speaking", "Koordinasi acara", "Kamera"]
-        }
-      ]
-    },
-    "currently": {
-      "label": "Di luar layar",
-      "items": [
-        { "label": "Sedang", "value": "Mengerjakan Indo Cahaya Express dan portfolio ini." },
-        { "label": "Belajar", "value": "React, Laravel, dan motion graphics." },
-        { "label": "Hobi", "value": "Badminton, renang, dan gitar." },
-        { "label": "Lokasi", "value": "Jakarta, Indonesia." }
-      ]
-    }
-  },
-  "contact": {
-    "eyebrow": "Kontak / Terbuka",
-    "title": "Ada yang ingin dibuat?",
-    "intro": "Ceritakan proyek atau masalah yang sedang Anda hadapi. Saya terbuka untuk website, sistem, desain antarmuka, motion graphics, dan magang. Saya akan balas dengan jujur, termasuk kalau proyeknya belum cocok untuk saya.",
-    "availability": "Saat ini saya kuliah sambil bekerja. Waktu pengerjaan proyek akan saya sampaikan sejak awal.",
-    "response": "Saya membaca semua pesan dan biasanya membalas dalam 1–2 hari.",
-    "privacy": "Pesan Anda sampai langsung ke saya. Tidak ada newsletter atau daftar email.",
-    "projectTypes": [
-      "Website / sistem web",
-      "Desain antarmuka",
-      "Motion graphics / video",
-      "Visual & aset digital",
-      "Lainnya"
     ],
-    "budgets": [
-      "Di bawah Rp1 juta",
-      "Rp1–3 juta",
-      "Rp3–7 juta",
-      "Rp7 juta+",
-      "Belum tahu"
+    "archive": [
+        {
+            "title": "BULLY",
+            "kind": "Film pendek / Editor",
+            "note": "Juara 3, proyek sekolah."
+        },
+        {
+            "title": "RAKERNAS Jakarta",
+            "kind": "Dokumentasi acara",
+            "note": "Bagian dari tim dokumentasi."
+        },
+        {
+            "title": "ASTRO 2026",
+            "kind": "Acara kampus",
+            "note": "Contact person AGT."
+        }
     ]
-  },
-  "projects": [
-    {
-      "slug": "indo-cahaya-express",
-      "order": 1,
-      "title": "Indo Cahaya Express",
-      "kind": "Web & sistem ekspedisi",
-      "client": "Indo Cahaya Express",
-      "year": "2026",
-      "role": "Web developer & operasional",
-      "duration": "Berjalan",
-      "team": "Developer web, bersama tim operasional",
-      "scope": "Alur pengguna, Laravel, integrasi tarif, admin, invoice",
-      "stack": ["Laravel", "PHP", "MySQL", "Blade", "JavaScript"],
-      "external": "https://indocahayaexpress.com",
-      "summary": "Website dan sistem operasional untuk perusahaan ekspedisi: kalkulator tarif, booking, invoice, dan pelacakan dalam satu alur.",
-      "cardLine": "Tarif, order, invoice, dan tracking dalam satu sistem.",
-      "cover": "karta",
-      "coverAlt": "Ilustrasi antarmuka sistem Indo Cahaya Express dengan rute pengiriman dan kalkulator tarif.",
-      "background": "#08101F",
-      "foreground": "#F2F1EB",
-      "accent": "#FF4B3E",
-      "overview": [
-        "Indo Cahaya Express mengirim paket dan kargo ke luar negeri. Situsnya bukan hanya halaman profil: ada kalkulator tarif, proses booking, invoice, akun pelanggan, dan panel admin yang dipakai tim setiap hari.",
-        "Saya mengerjakan pengembangan web dan juga terlibat dalam operasional. Itu membantu saya memahami bahwa satu perubahan kecil di kalkulator bisa berdampak ke booking, invoice, dan laporan."
-      ],
-      "problem": {
-        "heading": "Tarif punya banyak aturan. Alurnya harus tetap sederhana.",
-        "body": [
-          "Setiap layanan punya dasar perhitungan berbeda: berat fisik atau volumetrik, surcharge, nilai barang, dan kurs. Data tarif tersebar di beberapa tabel dan harus konsisten dari kalkulator sampai invoice.",
-          "Di sisi lain, pelanggan hanya ingin tahu dua hal: berapa biayanya dan di mana paketnya. Pekerjaan utamanya adalah menjaga kerumitan itu tetap di belakang layar."
-        ]
-      },
-      "approach": [
-        {
-          "number": "01",
-          "title": "Satu sumber perhitungan",
-          "body": "Saya memusatkan logika tarif di service layer supaya kalkulator, booking, dan invoice memakai aturan yang sama. Perubahan tarif tidak perlu dilakukan di banyak tempat."
-        },
-        {
-          "number": "02",
-          "title": "Alur yang tidak bisa diubah di tengah jalan",
-          "body": "Penawaran disimpan sebagai token yang kedaluwarsa, sehingga harga yang dilihat pelanggan tetap sama saat mereka melanjutkan booking."
-        },
-        {
-          "number": "03",
-          "title": "Admin yang mengikuti pekerjaan nyata",
-          "body": "Panel admin mengikuti siklus pengiriman, invoice, dan data pelanggan. Tracking dari 17TRACK dipetakan ke status yang bisa dipahami tim dan pelanggan."
-        }
-      ],
-      "outcome": {
-        "title": "Satu sistem untuk pekerjaan yang berulang.",
-        "body": "Situs ini berjalan di produksi dan terus dirawat. Fitur-fiturnya menyatukan pekerjaan yang sebelumnya tersebar: menghitung tarif, membuat order, menerbitkan invoice, dan mencari posisi paket.",
-        "metrics": [
-          { "value": "7", "label": "tabel tarif", "note": "DHL, FedEx, SingPost, USPS, Tlx, Aramex, dan TGE." },
-          { "value": "27", "label": "negara di data tarif", "note": "Dipakai sebagai dasar perhitungan layanan." },
-          { "value": "1", "label": "alur dari tarif ke invoice", "note": "Dengan satu sumber logika harga." }
-        ]
-      },
-      "reflection": "Kalau saya mengulang proyek ini, saya akan menulis tes untuk perhitungan tarif lebih awal. Harga adalah janji; kalau angkanya berubah tanpa sengaja, kepercayaan ikut berubah.",
-      "nextSlug": "jembatan-armco"
-    },
-    {
-      "slug": "jembatan-armco",
-      "order": 2,
-      "title": "Jembatan Armco",
-      "kind": "Motion graphics & video",
-      "client": "Proyek independen",
-      "year": "2025",
-      "role": "Editor & motion designer",
-      "duration": "Proyek mandiri",
-      "team": "Solo",
-      "scope": "Editing, motion graphics, tipografi, color grade",
-      "stack": ["After Effects", "Premiere Pro", "Illustrator"],
-      "summary": "Video motion graphic yang menjelaskan pembangunan jembatan gantung, dari struktur sampai tahap akhir.",
-      "cardLine": "Menjelaskan konstruksi lewat gambar dan gerak.",
-      "cover": "motion",
-      "coverAlt": "Still video dokumentasi pembangunan jembatan dengan dua pekerja di atas struktur, diberi warna biru.",
-      "background": "#05070F",
-      "foreground": "#F2F1EB",
-      "accent": "#FF4B3E",
-      "overview": [
-        "Video ini membawa penonton melalui proses pembangunan Jembatan Armco: dari struktur utama sampai detail yang biasanya hanya terlihat oleh orang teknis.",
-        "Saya mengerjakan editing dan motion graphics, dengan fokus agar informasi tetap jelas tanpa kehilangan ketegangan visual dari sebuah konstruksi."
-      ],
-      "problem": {
-        "heading": "Teknis, tapi tidak boleh terasa seperti manual.",
-        "body": [
-          "Material konstruksi punya banyak detail dan istilah. Kalau semuanya dimasukkan sekaligus, penonton berhenti mengikuti.",
-          "Tantangannya adalah memilih apa yang perlu ditunjukkan, kapan harus berhenti, dan bagaimana teks serta gerakan membantu pemahaman."
-        ]
-      },
-      "approach": [
-        {
-          "number": "01",
-          "title": "Mulai dari struktur besar",
-          "body": "Video dibuka dengan konteks dan bentuk keseluruhan, lalu perlahan masuk ke bagian yang lebih detail."
-        },
-        {
-          "number": "02",
-          "title": "Beri napas pada gambar",
-          "body": "Tidak setiap detik perlu diisi teks. Saya memakai tempo dan ruang kosong agar gambar bisa bekerja."
-        },
-        {
-          "number": "03",
-          "title": "Jaga identitas tetap konsisten",
-          "body": "Tipografi, warna, dan penempatan judul dibuat tetap agar video terasa sebagai satu bagian utuh, bukan kumpulan klip."
-        }
-      ],
-      "outcome": {
-        "title": "Dua menit yang menjelaskan banyak hal.",
-        "body": "Hasil akhirnya adalah video berdurasi 2 menit 37 detik yang menggabungkan rekaman, grafis, dan tipografi. Video ini menjadi salah satu contoh cara saya menerjemahkan materi teknis menjadi sesuatu yang bisa diikuti.",
-        "metrics": [
-          { "value": "2:37", "label": "durasi akhir", "note": "Dari pembukaan sampai penutup." },
-          { "value": "2025", "label": "tahun produksi", "note": "Dikerjakan sebagai proyek mandiri." },
-          { "value": "1", "label": "orang di tim", "note": "Editing dan motion graphics." }
-        ]
-      },
-      "reflection": "Bagian tersulit dalam video teknis bukan membuat efeknya terlihat rumit, tetapi tahu kapan harus berhenti dan membiarkan gambar berbicara.",
-      "nextSlug": "portofolio-2026"
-    },
-    {
-      "slug": "portofolio-2026",
-      "order": 3,
-      "title": "Portofolio 2026",
-      "kind": "Website pribadi",
-      "client": "Proyek pribadi",
-      "year": "2026",
-      "role": "Desain & pengembangan",
-      "duration": "Proyek pribadi",
-      "team": "Solo",
-      "scope": "Arah visual, antarmuka, Laravel, React, copywriting",
-      "stack": ["Laravel", "React", "Inertia", "Vite", "CSS"],
-      "summary": "Situs yang sedang Anda lihat: portfolio dengan sistem tiga warna, halaman berbasis JavaScript, dan alur kontak yang berfungsi.",
-      "cardLine": "Satu sistem, tiga warna, tanpa template.",
-      "cover": "portfolio",
-      "coverAlt": "Komposisi tipografi portfolio Farel Zaghlul dengan warna biru, merah, dan hitam.",
-      "background": "#1F3BCF",
-      "foreground": "#F2F1EB",
-      "accent": "#FFB0A9",
-      "overview": [
-        "Saya ingin portfolio yang terasa seperti ruang kerja, bukan kumpulan kartu. Setiap halaman punya ritme, tipografi, dan alasan untuk ada.",
-        "Situs ini juga menjadi latihan teknis: Laravel untuk routing dan form, React dan Inertia untuk halaman, CSS untuk sistem visual tanpa template."
-      ],
-      "problem": {
-        "heading": "Portfolio harus menunjukkan cara berpikir, bukan hanya hasil.",
-        "body": [
-          "Portfolio lama saya terlalu bergantung pada template dan efek. Isinya belum bercerita tentang bagaimana saya bekerja atau apa yang bisa saya lakukan.",
-          "Saya butuh struktur yang bisa menampung proyek dengan panjang berbeda, tetap enak dibaca, dan tidak mengalihkan perhatian dari isinya."
-        ]
-      },
-      "approach": [
-        {
-          "number": "01",
-          "title": "Tiga warna, satu aturan",
-          "body": "Hitam, merah, dan biru dipakai dengan peran yang jelas: hitam untuk ruang, merah untuk penanda, biru untuk bagian yang perlu berhenti dan dibaca."
-        },
-        {
-          "number": "02",
-          "title": "Tipografi sebagai struktur",
-          "body": "Grid dan aturan tipografi dibuat lebih dulu, sebelum komponen. Ini menjaga halaman tetap konsisten saat isinya berubah."
-        },
-        {
-          "number": "03",
-          "title": "JavaScript untuk halaman, Laravel untuk sistem",
-          "body": "Inertia menghubungkan halaman React dengan routing dan validasi Laravel. Form kontak benar-benar menyimpan pesan dan mengirim notifikasi."
-        }
-      ],
-      "outcome": {
-        "title": "Portfolio yang bisa saya rawat.",
-        "body": "Hasilnya adalah situs yang lebih tenang, cepat, dan mudah diperbarui. Saya bisa menambah proyek tanpa mendesain ulang halaman, dan form kontak bekerja dari ujung ke ujung.",
-        "metrics": [
-          { "value": "6", "label": "template halaman", "note": "Termasuk studi kasus, tentang, kontak, dan 404." },
-          { "value": "3", "label": "warna inti", "note": "Hitam, merah, biru." },
-          { "value": "1", "label": "alur kontak", "note": "Validasi server, penyimpanan, dan notifikasi email." }
-        ]
-      },
-      "reflection": "Membangun portfolio sendiri berarti tidak ada klien yang menahan. Itu justru membuat setiap keputusan harus punya alasan.",
-      "nextSlug": "indo-cahaya-express"
-    }
-  ],
-  "archive": [
-    {
-      "title": "BULLY",
-      "kind": "Film pendek / Editor",
-      "note": "Juara 3, proyek sekolah."
-    },
-    {
-      "title": "RAKERNAS Jakarta",
-      "kind": "Dokumentasi acara",
-      "note": "Bagian dari tim dokumentasi."
-    },
-    {
-      "title": "ASTRO 2026",
-      "kind": "Acara kampus",
-      "note": "Contact person AGT."
-    }
-  ]
 }

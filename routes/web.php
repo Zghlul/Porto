@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\MessageController;
+use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\ContactController;
 use App\Support\Portfolio;
 use Illuminate\Support\Facades\Route;
@@ -47,6 +51,34 @@ Route::get('/robots.txt', function () {
         "User-agent: *\nAllow: /\n\nSitemap: ".url('/sitemap.xml')."\n"
     )->header('Content-Type', 'text/plain; charset=UTF-8');
 })->name('robots');
+
+/* Dashboard ---------------------------------------------------------------- */
+
+Route::prefix('admin')->group(function (): void {
+    Route::middleware('guest')->group(function (): void {
+        Route::get('login', [AuthController::class, 'create'])->name('admin.login');
+        Route::post('login', [AuthController::class, 'store'])->middleware('throttle:5,1');
+    });
+
+    Route::middleware('auth')->group(function (): void {
+        Route::post('logout', [AuthController::class, 'destroy'])->name('admin.logout');
+
+        Route::get('/', [DashboardController::class, 'index'])->name('admin.dashboard');
+        Route::post('publish', [DashboardController::class, 'publish'])->name('admin.publish');
+
+        Route::get('karya', [ProjectController::class, 'index'])->name('admin.projects.index');
+        Route::get('karya/baru', [ProjectController::class, 'create'])->name('admin.projects.create');
+        Route::post('karya', [ProjectController::class, 'store'])->name('admin.projects.store');
+        Route::get('karya/{project}/ubah', [ProjectController::class, 'edit'])->name('admin.projects.edit');
+        Route::put('karya/{project}', [ProjectController::class, 'update'])->name('admin.projects.update');
+        Route::delete('karya/{project}', [ProjectController::class, 'destroy'])->name('admin.projects.destroy');
+
+        Route::get('pesan', [MessageController::class, 'index'])->name('admin.messages.index');
+        Route::patch('pesan/{message}/dibaca', [MessageController::class, 'read'])->name('admin.messages.read');
+        Route::patch('pesan/{message}/belum', [MessageController::class, 'unread'])->name('admin.messages.unread');
+        Route::delete('pesan/{message}', [MessageController::class, 'destroy'])->name('admin.messages.destroy');
+    });
+});
 
 Route::fallback(function () {
     return Inertia::render('Error', ['status' => 404])

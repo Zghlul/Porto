@@ -12,7 +12,8 @@ import { createInertiaApp } from '@inertiajs/react';
 import AppLayout from './Layouts/AppLayout';
 import { site } from './data/portfolio';
 
-const pages = import.meta.glob('./Pages/*.jsx');
+const pages = import.meta.glob('./Pages/**/*.jsx');
+const adminPages = import.meta.glob('./Pages/Admin/**/*.jsx');
 
 createInertiaApp({
     title: (title) => (title ? `${title} — ${site.name}` : `${site.name} — ${site.shortRole}`),
@@ -23,7 +24,10 @@ createInertiaApp({
             throw new Error(`Page not found: ${name}`);
         }
 
-        page.default.layout = (content) => <AppLayout>{content}</AppLayout>;
+        // The dashboard brings its own rail; the public site shell would fight it.
+        if (!adminPages[`./Pages/${name}.jsx`]) {
+            page.default.layout = (content) => <AppLayout>{content}</AppLayout>;
+        }
 
         return page;
     },

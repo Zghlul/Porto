@@ -17,5 +17,14 @@ class ContactMessage extends Model
         'budget',
         'message',
         'ip_address',
+        'read_at',
     ];
+
+    /**
+     * @return array<string, string>
+     */
+    protected function casts(): array
+    {
+        return ['read_at' => 'datetime'];
+    }
 }

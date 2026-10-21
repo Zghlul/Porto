@@ -38,6 +38,14 @@ final class Portfolio
     }
 
     /**
+     * Drop the cached copy so the next read hits disk again.
+     */
+    public static function flush(): void
+    {
+        self::$content = null;
+    }
+
+    /**
      * @return array<int, array<string, mixed>>
      */
     public static function projects(): array
