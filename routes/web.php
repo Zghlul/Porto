@@ -9,14 +9,38 @@ use App\Support\Portfolio;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-Route::get('/', fn () => Inertia::render('Home'))->name('home');
+Route::get('/', fn () => Inertia::render('Home', ['projects' => Portfolio::projects()]))->name('home');
 
-Route::get('/work', fn () => Inertia::render('Work'))->name('work.index');
+Route::get('/work', fn () => Inertia::render('Work', ['projects' => Portfolio::projects()]))->name('work.index');
 
 Route::get('/work/{project}', function (string $project) {
-    abort_unless(Portfolio::project($project), 404);
+    $item = Portfolio::project($project);
+    abort_unless($item, 404);
 
-    return Inertia::render('Project', ['slug' => $project]);
+    $all = Portfolio::projects();
+    $next = null;
+    if (! empty($item['nextSlug'])) {
+        foreach ($all as $p) {
+            if (($p['slug'] ?? null) === $item['nextSlug']) {
+                $next = $p;
+                break;
+            }
+        }
+    }
+    if (! $next) {
+        foreach ($all as $p) {
+            if (($p['slug'] ?? null) !== $project) {
+                $next = $p;
+                break;
+            }
+        }
+    }
+
+    return Inertia::render('Project', [
+        'slug' => $project,
+        'project' => $item,
+        'nextProject' => $next,
+    ]);
 })->where('project', '[a-z0-9-]+')->name('work.show');
 
 Route::get('/about', fn () => Inertia::render('About'))->name('about');

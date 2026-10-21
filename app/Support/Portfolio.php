@@ -50,6 +50,48 @@ final class Portfolio
      */
     public static function projects(): array
     {
+        try {
+            if (\Illuminate\Support\Facades\Schema::hasTable('projects')) {
+                $dbProjects = \App\Models\Project::query()
+                    ->where('published', true)
+                    ->orderBy('order')
+                    ->orderBy('id')
+                    ->get();
+
+                if ($dbProjects->isNotEmpty()) {
+                    return $dbProjects->map(fn (\App\Models\Project $p): array => [
+                        'slug' => $p->slug,
+                        'order' => $p->order,
+                        'title' => $p->title,
+                        'kind' => $p->kind,
+                        'client' => $p->client,
+                        'year' => $p->year,
+                        'role' => $p->role,
+                        'duration' => $p->duration,
+                        'team' => $p->team,
+                        'scope' => $p->scope,
+                        'stack' => array_values($p->stack ?? []),
+                        'external' => $p->external,
+                        'summary' => $p->summary,
+                        'cardLine' => $p->card_line,
+                        'cover' => $p->cover,
+                        'coverAlt' => $p->cover_alt,
+                        'background' => $p->background,
+                        'foreground' => $p->foreground,
+                        'accent' => $p->accent,
+                        'overview' => array_values($p->overview ?? []),
+                        'problem' => $p->problem,
+                        'approach' => array_values($p->approach ?? []),
+                        'outcome' => $p->outcome,
+                        'reflection' => $p->reflection,
+                        'nextSlug' => $p->next_slug,
+                    ])->all();
+                }
+            }
+        } catch (\Throwable) {
+            // fallback to file
+        }
+
         $projects = self::content()['projects'] ?? [];
 
         usort($projects, fn (array $a, array $b): int => ($a['order'] ?? 0) <=> ($b['order'] ?? 0));

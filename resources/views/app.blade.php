@@ -45,13 +45,33 @@
         @inertia
 
         <noscript>
-            <div style="padding: 2rem; font-family: sans-serif; max-width: 40rem; margin: 0 auto;">
-                <h1>Farel Zaghlul</h1>
-                <p>
-                    Situs ini membutuhkan JavaScript. Anda bisa menghubungi saya langsung di
-                    <a href="mailto:farelzaghlul@gmail.com">farelzaghlul@gmail.com</a>.
-                </p>
-            </div>
+            <main style="padding: 2.5rem 1.5rem; font-family: system-ui, -apple-system, sans-serif; max-width: 48rem; margin: 0 auto; color: #f2f1eb; background: #0a0b0d; line-height: 1.6;">
+                <header style="border-bottom: 1px solid #222; padding-bottom: 1.5rem; margin-bottom: 2rem;">
+                    <h1 style="font-size: 2rem; margin: 0 0 0.5rem 0;">Farel Zaghlul</h1>
+                    <p style="margin: 0; color: #888;">Web developer & motion designer · Jakarta, Indonesia</p>
+                    <p style="margin: 0.5rem 0 0 0;">Saya membangun website dan sistem dengan Laravel, merancang antarmuka, serta memproduksi visual dan motion graphics.</p>
+                </header>
+
+                <section style="margin-bottom: 2.5rem;">
+                    <h2 style="font-size: 1.2rem; color: #ff4b3e; margin-bottom: 1rem;">Karya Pilihan</h2>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="border-bottom: 1px solid #1a1a1a; padding: 0.8rem 0;">
+                            <strong>Indo Cahaya Express</strong> (2026) — Web & sistem ekspedisi. Tarif, order, invoice, dan tracking.
+                        </li>
+                        <li style="border-bottom: 1px solid #1a1a1a; padding: 0.8rem 0;">
+                            <strong>Jembatan Armco</strong> (2025) — Motion graphics & video konstruksi jembatan.
+                        </li>
+                        <li style="border-bottom: 1px solid #1a1a1a; padding: 0.8rem 0;">
+                            <strong>Portofolio 2026</strong> (2026) — Website pribadi dengan Laravel, Inertia, dan React.
+                        </li>
+                    </ul>
+                </section>
+
+                <section style="margin-bottom: 2rem;">
+                    <h2 style="font-size: 1.2rem; color: #ff4b3e; margin-bottom: 0.5rem;">Kontak</h2>
+                    <p style="margin: 0;">Email: <a href="mailto:farelzaghlul@gmail.com" style="color: #7d95ff;">farelzaghlul@gmail.com</a> · GitHub: <a href="https://github.com/Zghlul" style="color: #7d95ff;">@Zghlul</a></p>
+                </section>
+            </main>
         </noscript>
     </body>
 </html>

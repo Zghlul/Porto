@@ -50,9 +50,10 @@ function WorkRow({ project, index, onEnter, onLeave }) {
     );
 }
 
-export default function Work() {
+export default function Work({ projects: serverProjects }) {
     const [active, setActive] = useState(null);
     const reduceMotion = useReducedMotion();
+    const projectList = serverProjects && serverProjects.length > 0 ? serverProjects : projects;
 
     const x = useMotionValue(0);
     const y = useMotionValue(0);
@@ -105,7 +106,7 @@ export default function Work() {
             <header className="work-intro shell">
                 <div className="work-intro__meta">
                     <span className="eyebrow">Indeks / 2020 — 2026</span>
-                    <span className="work-intro__count">{totalProjects()} karya</span>
+                    <span className="work-intro__count">{String(projectList.length).padStart(2, '0')} karya</span>
                 </div>
 
                 <div className="work-intro__grid">
@@ -140,7 +141,7 @@ export default function Work() {
 
                 <h2 className="sr-only">Daftar karya</h2>
                 <ul className="work-list" onMouseLeave={() => setActive(null)}>
-                    {projects.map((project, index) => (
+                    {projectList.map((project, index) => (
                         <WorkRow
                             key={project.slug}
                             project={project}

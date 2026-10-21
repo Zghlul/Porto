@@ -43,6 +43,12 @@ class DashboardController extends Controller
     {
         $exported = PortfolioSync::exportJson();
 
+        // On shared hosting (Hostinger, etc.), proc_open is disabled.
+        // Data is already saved in DB and synced to portfolio.json.
+        if (! function_exists('proc_open')) {
+            return back()->with('success', "Terbit: {$exported} karya aktif di situs.");
+        }
+
         // ponytail: node dies with a CSPRNG assertion when it inherits the
         // server's PATH (mingw bin). Hand it a clean env; npm.cmd by full path.
         $nodeDir = collect(['C:/Program Files/nodejs', 'C:/Program Files (x86)/nodejs'])

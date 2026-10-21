@@ -37,9 +37,10 @@ function NowCard() {
     );
 }
 
-export default function Home() {
+export default function Home({ projects: serverProjects }) {
     const reduceMotion = useReducedMotion();
     const titleLines = site.hero.title;
+    const projectList = serverProjects && serverProjects.length > 0 ? serverProjects : projects;
 
     const personSchema = {
         '@context': 'https://schema.org',
@@ -207,7 +208,7 @@ export default function Home() {
                 />
 
                 <div className="work-grid">
-                    {projects.slice(0, 3).map((project, index) => (
+                    {projectList.slice(0, 3).map((project, index) => (
                         <ProjectCard key={project.slug} project={project} index={index} />
                     ))}
                     <NowCard />

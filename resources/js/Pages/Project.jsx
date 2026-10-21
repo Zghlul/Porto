@@ -11,14 +11,14 @@ import {
     totalProjects,
 } from '../data/portfolio';
 
-export default function Project({ slug }) {
-    const project = getProject(slug);
+export default function Project({ slug, project: serverProject, nextProject: serverNext }) {
+    const project = serverProject ?? getProject(slug);
 
     if (!project) {
         return null;
     }
 
-    const nextProject = getNextProject(project);
+    const nextProject = serverNext ?? getNextProject(project);
 
     return (
         <Page className="project-page">
